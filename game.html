@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор NFT</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="greeting">Выбери свою NFT!</h1>
+        <p>Кликай по карточкам, лудка началась!</p>
+        
+        <div class="nft-grid">
+            <div class="nft-card" onclick="chooseNFT('1')">
+                <div class="nft-emoji">🦍</div>
+                <h3>Bored Ape</h3>
+                <p>Самая популярная обезьянка</p>
+            </div>
+            
+            <div class="nft-card" onclick="chooseNFT('2')">
+                <div class="nft-emoji">💎</div>
+                <h3>Crypto Punk</h3>
+                <p>Настоящий бриллиант</p>
+            </div>
+            
+            <div class="nft-card" onclick="chooseNFT('3')">
+                <div class="nft-emoji">🐱</div>
+                <h3>Cool Cat</h3>
+                <p>Самый стильный кот</p>
+            </div>
+        </div>
+        <button onclick="goToWheel()" class="wheel-btn">🎰 Крутить рулетку</button>
+        <button onclick="goBack()" class="back-btn">← Назад</button>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--tg-theme-bg-color, #ffffff);
+    color: var(--tg-theme-text-color, #000000);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--tg-theme-button-color, #40a7e3);
+}
+
+button {
+    background-color: var(--tg-theme-button-color, #40a7e3);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* Стили для карточек NFT */
+.nft-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+.nft-card {
+    background-color: var(--tg-theme-secondary-bg-color, #f0f0f0);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid transparent;
+}
+
+.nft-card:hover {
+    transform: scale(1.02);
+    border-color: var(--tg-theme-button-color, #40a7e3);
+}
+
+.nft-emoji {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.nft-card h3 {
+    margin: 5px 0;
+    color: var(--tg-theme-text-color, #000000);
+}
+
+.nft-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.back-btn {
+    background-color: transparent;
+    color: var(--tg-theme-text-color, #000000);
+    border: 1px solid var(--tg-theme-button-color, #40a7e3);
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background-color: var(--tg-theme-button-color, #40a7e3);
+    color: var(--tg-theme-button-text-color, #ffffff);
+}
+.wheel-btn {
+    background-color: var(--tg-theme-button-color, #40a7e3);
+    color: var(--tg-theme-button-text-color, #ffffff);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+}
